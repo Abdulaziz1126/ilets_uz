@@ -1,0 +1,9 @@
+$Inter: ("Bold", 700), ("SemiBold", 800), ("Regular", 400),("Light", 300);
+
+@each $name, $weight in $Inter{
+    @font-face {
+        font-family: "Inter";
+        src: url("../fonts/Inter_24pt-#{$name}.ttf");
+        font-weight: $weight;
+    }
+}

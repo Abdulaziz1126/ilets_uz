@@ -1,0 +1,991 @@
+.listening {
+  margin-top: 190px;
+
+  .listening_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    background: white;
+  }
+
+  .listening_title_1 {
+    font-weight: 900;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+
+  .listening_title_2 {
+    color: #666;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .listening_audio {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    // Audio borderini olib tashladik
+    border: none;
+  }
+
+  .sticky_audio {
+    position: sticky;
+    top: 30px;
+    z-index: 999;
+    padding: 10px 0;
+  }
+
+  // Table Page Styles
+  .table_page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .table_instruction {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: normal;
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background: white;
+
+    strong {
+      color: #000000;
+      font-weight: 700;
+    }
+  }
+
+  .restaurant_table_container {
+    overflow-x: auto;
+    margin-bottom: 30px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background: white;
+  }
+
+  .restaurant_table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+
+    .table_header {
+      background-color: #f0f0f0;
+      color: #000000;
+      font-weight: 700;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 16px;
+      border: 2px solid #000000;
+      vertical-align: middle;
+    }
+
+    .table_row {
+      border-bottom: 2px solid #000000;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .cell_large {
+      padding: 20px 15px;
+      border: 2px solid #000000;
+      vertical-align: top;
+      background-color: white;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .restaurant_name {
+      font-weight: 700;
+      color: #000000;
+      background-color: white !important;
+      font-size: 16px;
+      text-align: center;
+
+      strong {
+        font-size: 16px;
+      }
+    }
+
+    .restaurant_name_input {
+      text-align: center;
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .location_text {
+      font-size: 15px;
+      color: #000000;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .recommendation_text {
+      font-size: 15px;
+      color: #000000;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .recommendation_list {
+      .recommendation_item {
+        font-size: 15px;
+        color: #000000;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .comments_list {
+      .comment_item {
+        font-size: 15px;
+        color: #000000;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Input with number styles
+  .input_with_number {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0 3px;
+  }
+
+  .input_number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    border: 1px solid #000000;
+  }
+
+  .table_input {
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px 6px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    background-color: white;
+    vertical-align: middle;
+    font-weight: 500;
+
+    /* Scrollbarlarni yashirish */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+  }
+
+  .price_input {
+    width: 70px;
+  }
+
+  // Questions 11-20 Page Styles
+  .questions_11_20_page {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  // Questions 21-26 Page Styles
+  .questions_21_26_page {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .ma_question_group {
+      border: 2px solid #000000;
+      border-radius: 8px;
+      padding: 25px;
+      background: white;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .ma_question_header {
+      margin-bottom: 20px;
+    }
+
+    .ma_instruction {
+      font-size: 16px;
+      color: #000000;
+      text-align: center;
+      font-weight: normal;
+      padding: 12px;
+      border: 2px solid #000000;
+      border-radius: 5px;
+      background: white;
+      margin-bottom: 0;
+
+      strong {
+        color: #000000;
+        font-weight: 700;
+      }
+    }
+
+    .ma_question_content {
+      .ma_question_text {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 20px;
+        line-height: 1.5;
+
+        strong {
+          color: #000000;
+        }
+      }
+    }
+
+    .ma_options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .ma_option {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #f8f9fa;
+        border-color: #007bff;
+      }
+
+      input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        margin-top: 2px;
+      }
+
+      .ma_option_text {
+        font-size: 15px;
+        color: #000000;
+        line-height: 1.4;
+        flex: 1;
+      }
+    }
+  }
+
+  .mc_section {
+    margin-bottom: 40px;
+  }
+
+  .mc_instruction {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: normal;
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background: white;
+
+    strong {
+      color: #000000;
+      font-weight: 700;
+    }
+  }
+
+  .mc_questions {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .mc_question {
+    display: flex;
+    gap: 15px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
+  }
+
+  .mc_question_number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+
+  .mc_question_content {
+    flex: 1;
+  }
+
+  .mc_question_text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  .mc_options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mc_option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #f8f9fa;
+      border-color: #007bff;
+    }
+
+    input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .mc_option_text {
+      font-size: 15px;
+      color: #000000;
+      line-height: 1.4;
+    }
+  }
+
+  // Multiple Answer Section Styles (11-20 page uchun)
+  .ma_section {
+    .ma_question_group {
+      border: 2px solid #000000;
+      border-radius: 8px;
+      padding: 25px;
+      background: white;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .ma_question_header {
+      margin-bottom: 20px;
+    }
+
+    .ma_instruction {
+      font-size: 16px;
+      color: #000000;
+      text-align: center;
+      font-weight: normal;
+      padding: 12px;
+      border: 2px solid #000000;
+      border-radius: 5px;
+      background: white;
+      margin-bottom: 0;
+
+      strong {
+        color: #000000;
+        font-weight: 700;
+      }
+    }
+
+    .ma_question_content {
+      .ma_question_text {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 20px;
+        line-height: 1.5;
+
+        strong {
+          color: #000000;
+        }
+      }
+    }
+
+    .ma_options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .ma_option {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #f8f9fa;
+        border-color: #007bff;
+      }
+
+      input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        margin-top: 2px;
+      }
+
+      .ma_option_text {
+        font-size: 15px;
+        color: #000000;
+        line-height: 1.4;
+        flex: 1;
+      }
+    }
+  }
+
+  // Regular Questions Styles
+  .gap_fill_questions {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+  }
+
+  .gap_fill_question {
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 12px 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .gap_fill_question > span {
+    white-space: nowrap;
+  }
+
+  .inline_input {
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px 6px;
+    margin: 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    background-color: white;
+
+    /* Scrollbarlarni yashirish */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+  }
+}
+
+.pagination_controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  user-select: none;
+
+  button,
+  .page_number {
+    background-color: #fff;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover:not(.active):not(:disabled) {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #fff;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+      background-color: #f9f9f9;
+      border-color: #ddd;
+      color: #999;
+    }
+  }
+
+  .page_number {
+    cursor: pointer;
+
+    &.active {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #fff;
+      cursor: default;
+    }
+  }
+}
+
+.finish_test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+  .finish_btn {
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+// Notes Page Styles
+.notes_page {
+  padding: 20px;
+  
+  .notes_instruction {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .notes_container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #000;
+  }
+  
+  .notes_title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .notes_section {
+    margin-bottom: 30px;
+    
+    .notes_section_title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #000;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+    
+    .notes_content {
+      .notes_item {
+        margin-bottom: 10px;
+        line-height: 1.6;
+        color: #000;
+      }
+      
+      .notes_subitems {
+        margin-left: 20px;
+        
+        .notes_subitem {
+          margin-bottom: 8px;
+          line-height: 1.6;
+          color: #000;
+        }
+      }
+    }
+  }
+  
+  .input_with_number {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 5px;
+    
+    .input_number {
+      background: white;
+      color: #000;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      margin-right: 5px;
+      border: 1px solid #000;
+    }
+    
+    .notes_input {
+      width: 150px;
+      height: 32px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-size: 14px;
+      resize: none;
+      color: #000;
+      
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .listening {
+    margin-top: 140px;
+
+    .listening_box {
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+    .restaurant_table {
+      min-width: 700px;
+
+      .table_header {
+        padding: 12px 8px;
+        font-size: 14px;
+      }
+
+      .cell_large {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+
+      .restaurant_name {
+        font-size: 14px;
+
+        strong {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .input_number {
+      width: 18px;
+      height: 18px;
+      font-size: 10px;
+    }
+
+    .table_input {
+      width: 90px;
+      height: 26px;
+      font-size: 13px;
+    }
+
+    .price_input {
+      width: 60px;
+    }
+
+    .mc_question {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+    }
+
+    .mc_question_number {
+      align-self: flex-start;
+    }
+
+    .mc_question_text {
+      font-size: 15px;
+    }
+
+    .mc_option_text {
+      font-size: 14px;
+    }
+
+    .ma_question_group {
+      padding: 20px;
+    }
+
+    .ma_instruction {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .ma_question_text {
+      font-size: 15px;
+    }
+
+    .ma_option {
+      padding: 8px 12px;
+    }
+
+    .ma_option_text {
+      font-size: 14px;
+    }
+
+    .gap_fill_question {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+
+    .inline_input {
+      width: 80px;
+      height: 24px;
+      font-size: 13px;
+    }
+
+    .notes_page {
+      padding: 10px;
+      
+      .notes_container {
+        padding: 20px 15px;
+        border: 1px solid #000;
+      }
+      
+      .notes_title {
+        font-size: 20px;
+      }
+      
+      .input_with_number {
+        .notes_input {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  .pagination_controls {
+    flex-wrap: wrap;
+    gap: 5px;
+
+    button,
+    .page_number {
+      padding: 6px 10px;
+      font-size: 14px;
+      min-width: 35px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .listening {
+    margin-top: 120px;
+
+    .listening_title_1 {
+      font-size: 22px;
+    }
+
+    .listening_title_2 {
+      font-size: 14px;
+    }
+
+    .restaurant_table {
+      min-width: 600px;
+
+      .table_header {
+        padding: 10px 6px;
+        font-size: 12px;
+      }
+
+      .cell_large {
+        padding: 12px 8px;
+        font-size: 12px;
+      }
+    }
+
+    .input_number {
+      width: 16px;
+      height: 16px;
+      font-size: 9px;
+    }
+
+    .table_input {
+      width: 80px;
+      height: 24px;
+      font-size: 12px;
+    }
+
+    .price_input {
+      width: 50px;
+    }
+
+    .table_instruction,
+    .mc_instruction {
+      font-size: 16px;
+      padding: 12px;
+    }
+
+    .mc_question {
+      padding: 12px;
+    }
+
+    .mc_question_text {
+      font-size: 14px;
+    }
+
+    .mc_option_text {
+      font-size: 13px;
+    }
+
+    .ma_question_group {
+      padding: 15px;
+    }
+
+    .ma_instruction {
+      font-size: 13px;
+      padding: 8px;
+    }
+
+    .ma_question_text {
+      font-size: 14px;
+    }
+
+    .ma_option {
+      padding: 6px 10px;
+    }
+
+    .ma_option_text {
+      font-size: 13px;
+    }
+
+    .gap_fill_question {
+      font-size: 13px;
+      padding: 8px 10px;
+    }
+
+    .inline_input {
+      width: 70px;
+      height: 22px;
+      font-size: 12px;
+    }
+  }
+
+  .pagination_controls {
+    button,
+    .page_number {
+      padding: 4px 8px;
+      font-size: 12px;
+      min-width: 30px;
+    }
+  }
+
+  .finish_test .finish_btn {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+}

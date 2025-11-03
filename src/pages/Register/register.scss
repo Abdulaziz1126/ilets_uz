@@ -1,0 +1,68 @@
+.register_container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fefefe;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-top: 190px;
+}
+
+.register_title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 24px;
+  color: #222;
+}
+
+.form_group {
+  margin-bottom: 18px;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 800;
+    color: #333;
+  }
+
+  input {
+    width: 100%;
+    padding: 9px 12px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+    }
+  }
+}
+
+.error_message {
+  color: #e63946; /* qizil rang */
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.submit_button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #068f06; /* hoverda qizil rang */
+  }
+}
