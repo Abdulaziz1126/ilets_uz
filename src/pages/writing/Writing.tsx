@@ -81,11 +81,11 @@ ${(listeningAnswers || [])
       }),
     })
       .then(res => res.json())
-      .then(data => {
+      .then(() => {
         // Optional: console.log('Yuborildi')
       })
-      .catch(error => {
-        // Optional: console.error('Xatolik:', error)
+      .catch(() => {
+        // Optional: console.error('Xatolik')
       })
 
     navigate('/')
